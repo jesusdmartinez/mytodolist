@@ -1,0 +1,14 @@
+<!doctype html>
+<head>
+    <title>My-Tasks</title>
+</head>
+<body>
+<h1><u>Hello {{ user or 'you' }}:</u> these are your tasks!!!</h1>
+
+{% for post in posts %}
+  <h2> Task:  {{post.task_name}}</h2>
+  <h3> Due Date:  {{post.due_date}}</h3>
+  <p>   </p>
+{% endfor %}
+
+</body>

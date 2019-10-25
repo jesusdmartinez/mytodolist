@@ -6,6 +6,7 @@ from .models import Book
 BookApi = Blueprint('book_api', __name__)
 
 
+
 @BookApi.route('/create', methods=['POST'])
 def create_book():
 
